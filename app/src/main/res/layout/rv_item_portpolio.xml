@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="100dp"
+	android:layout_margin="10dp"
+	app:cardCornerRadius="10dp"
+	app:cardElevation="10dp"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools">
+
+	<androidx.constraintlayout.widget.ConstraintLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<ImageView
+			android:scaleType="centerCrop"
+			android:layout_width="70dp"
+			android:layout_height="70dp"
+			android:id="@+id/iv_port"
+			android:src="@drawable/profile_image"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toTopOf="parent"
+			app:layout_constraintBottom_toBottomOf="parent"
+			android:layout_marginStart="30dp"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="20dp"
+			android:id="@+id/tv_port1"
+			tools:text="프로젝트 이름"
+			app:layout_constraintStart_toEndOf="@+id/iv_port"
+			app:layout_constraintTop_toTopOf="@+id/iv_port"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/tv_port2"
+			android:text="Awesome Project"
+			app:layout_constraintStart_toStartOf="@+id/tv_port1"
+			app:layout_constraintTop_toBottomOf="@+id/tv_port1"
+			android:layout_marginTop="15dp"/>
+
+
+	</androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
