@@ -26,6 +26,15 @@
 				app:layout_constraintStart_toStartOf="parent"
 				app:layout_constraintTop_toTopOf="parent" />
 
+			<Spinner
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/sp_name"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintTop_toTopOf="parent"
+				android:layout_marginTop="5dp"
+				android:layout_marginEnd="5dp"/>
+
 			<View
 				android:id="@+id/l_1"
 				android:layout_width="match_parent"
@@ -80,8 +89,20 @@
 				app:layout_constraintStart_toStartOf="parent"
 				app:layout_constraintTop_toBottomOf="@id/tv_name3" />
 
-			<!-- 아래쪽에 리싸이클러 뷰를 넣으세요 -->
-
+			<androidx.recyclerview.widget.RecyclerView
+				android:id="@+id/rv_portpolio"
+				android:layout_width="0dp"
+				android:layout_height="0dp"
+				android:layout_margin="10dp"
+				android:orientation="vertical"
+				android:visibility="invisible"
+				app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+				app:layout_constraintBottom_toBottomOf="parent"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/bt_toggle"
+				tools:listitem="@layout/rv_item_portpolio"
+				tools:visibility="visible" />
 
 		</androidx.constraintlayout.widget.ConstraintLayout>
 

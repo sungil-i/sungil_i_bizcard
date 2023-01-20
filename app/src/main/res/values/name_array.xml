@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="name_array">
+		<item>[이름]</item>
+		<item>송주환</item>
+		<item>김유강</item>
+		<item>고준성</item>
+		<item>정한얼</item>
+		<item>강주훈</item>
+		<item>문시영</item>
+		<item>손태영</item>
+		<item>이상준</item>
+	</string-array>
+</resources>

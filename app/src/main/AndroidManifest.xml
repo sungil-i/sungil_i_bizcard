@@ -14,6 +14,30 @@
 		android:theme="@style/Theme.BizCard"
 		tools:targetApi="31">
 		<activity
+			android:name=".LeeSangjunActivity"
+			android:exported="false" />
+		<activity
+			android:name=".SonTaeyoungActivity"
+			android:exported="false" />
+		<activity
+			android:name=".MoonSiyeongActivity"
+			android:exported="false" />
+		<activity
+			android:name=".KangJuhoonActivity"
+			android:exported="false" />
+		<activity
+			android:name=".JeongHaneolActivity"
+			android:exported="false" />
+		<activity
+			android:name=".KoJunseongActivity"
+			android:exported="false" />
+		<activity
+			android:name=".KimYukangActivity"
+			android:exported="false" />
+		<activity
+			android:name=".SongJuhwanActivity"
+			android:exported="false" />
+		<activity
 			android:name=".MainActivity"
 			android:exported="true">
 			<intent-filter>
