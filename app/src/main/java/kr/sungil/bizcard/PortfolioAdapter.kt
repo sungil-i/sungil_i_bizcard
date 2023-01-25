@@ -26,11 +26,15 @@ class PortfolioAdapter : ListAdapter<PortfolioModel, PortfolioAdapter.ViewHolder
 
 	// ViewHolder inner class
 	inner class ViewHolder(
-		private val binding: RvItemPortpolioBinding
+		private val binding: RvItemPortpolioBinding //XML디자인
 	) : RecyclerView.ViewHolder(binding.root) {
-		fun bind(pm: PortfolioModel) {
+		fun bind(pm: PortfolioModel) { //바인드 함수안에 넣어줌
 			// Code Here
-
+			binding.tvPort1.text = pm.name
+			binding.tvPort2.text = pm.desc
+			Glide.with(binding.ivPort.context)
+				.load(pm.imageUrl)
+				.into(binding.ivPort)
 		}
 	}
 
