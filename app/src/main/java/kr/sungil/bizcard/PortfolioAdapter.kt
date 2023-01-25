@@ -30,11 +30,13 @@ class PortfolioAdapter : ListAdapter<PortfolioModel, PortfolioAdapter.ViewHolder
 	) : RecyclerView.ViewHolder(binding.root) {
 		fun bind(pm: PortfolioModel) {
 			// Code Here
-			binding.tvPort1.text = pm.name
-			binding.tvPort2.text = pm.desc
-			Glide.with(binding.ivPort.context)
-				.load(pm.imageUrl)
-				.into(binding.ivPort)
+			binding.apply {
+				tvPort1.text = pm.name
+				tvPort2.text = pm.desc
+				Glide.with(ivPort.context)
+					.load(pm.imageUrl)
+					.into(ivPort)
+			}
 		}
 	}
 
