@@ -8,6 +8,7 @@ import kr.sungil.bizcard.databinding.ActivityMainBinding
 class MainActivity : AppCompatActivity() {
 	private lateinit var binding: ActivityMainBinding
 	private lateinit var adapter: PortfolioAdapter
+	private var isShow: Boolean = false
 
 	override fun onCreate(savedInstanceState: Bundle?) {
 		super.onCreate(savedInstanceState)
@@ -16,6 +17,16 @@ class MainActivity : AppCompatActivity() {
 		setContentView(binding.root)
 
 		// Code Here
+		// 리싸이클러뷰 adapter 연걸
+		binding.rvPort.adapter = adapter
+		// 리싸이클러뷰 데이터 리스트 연결
+		adapter.submitList(Portfolios.items)
 
+		//토글 버튼 이벤트
+		binding.btToggle.setOnClickListener{
+			//토클 할 때 자주 사용하는 방법.
+			isShow = !isShow
+			binding.rvPort.isVisible = isShow
+		}
 	}
 }

@@ -7,4 +7,9 @@ package kr.sungil.bizcard
  * imageUrl: 이미지 주소 (문자열)
  */
 
-data class PortfolioModel()
+data class PortfolioModel(
+    val idx:Int,
+    val name:String,
+    val desc:String,
+    val imageUrl:String
+)
