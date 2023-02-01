@@ -14,28 +14,28 @@
 		android:theme="@style/Theme.BizCard"
 		tools:targetApi="31">
 		<activity
-			android:name=".LeeSangjunActivity"
+			android:name=".ui.LeeSangjunActivity"
 			android:exported="false" />
 		<activity
-			android:name=".SonTaeyoungActivity"
+			android:name=".ui.SonTaeyoungActivity"
 			android:exported="false" />
 		<activity
-			android:name=".MoonSiyeongActivity"
+			android:name=".ui.MoonSiyeongActivity"
 			android:exported="false" />
 		<activity
-			android:name=".KangJuhoonActivity"
+			android:name=".ui.KangJuhoonActivity"
 			android:exported="false" />
 		<activity
-			android:name=".JeongHaneolActivity"
+			android:name=".ui.JeongHaneolActivity"
 			android:exported="false" />
 		<activity
-			android:name=".KoJunseongActivity"
+			android:name=".ui.KoJunseongActivity"
 			android:exported="false" />
 		<activity
-			android:name=".KimYukangActivity"
+			android:name=".ui.KimYukangActivity"
 			android:exported="false" />
 		<activity
-			android:name=".SongJuhwanActivity"
+			android:name=".ui.SongJuhwanActivity"
 			android:exported="false" />
 		<activity
 			android:name=".MainActivity"
